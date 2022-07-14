@@ -43,7 +43,7 @@ class Http
         curl_setopt ( $curl, CURLOPT_URL, $url ); // 要访问的地址
         curl_setopt ( $curl, CURLOPT_SSL_VERIFYPEER, FALSE ); // 对认证证书来源的检查
         curl_setopt ( $curl, CURLOPT_SSL_VERIFYHOST, FALSE ); // 从证书中检查SSL加密算法是否存在
-        curl_setopt ( $curl, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)' ); // 模拟用户使用的浏览器
+//        curl_setopt ( $curl, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)' ); // 模拟用户使用的浏览器
         curl_setopt ( $curl, CURLOPT_TIMEOUT, $setopt ); // 设置超时限制防止死循环
         if(empty($header)){
             $header = array();
